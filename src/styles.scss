@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+:root {
+    // =======PRIMARY=========
+    --primary-50: #FBF7F1;
+    --primary-100: #F6EBD8;
+    --primary-200: #EDD4AF;
+    --primary-300: #E3BC85;
+    --primary-400: #F2B76D;
+    --primary-500: #DD9F51;
+    --primary-600: #B9803A;
+    --primary-700: #815626;
+    --primary-800: #654320;
+    --primary-900: #4D331A;
+
+    // =======SECONDARY=========
+    --secondary-50: #e6eef8;
+    --secondary-100: #b0cbe9;
+    --secondary-200: #8ab2de;
+    --secondary-300: #548ecf;
+    --secondary-400: #3379c6;
+    --secondary-500: #0057b8;
+    --secondary-600: #004fa7;
+    --secondary-700: #003e83;
+    --secondary-800: #003065;
+    --secondary-900: #00254d;
+
+    // =====TEXT COLOR======
+    --color-50: #e6e8eb;
+    --color-100: #b2b6c1;
+    --color-200: #8c93a3;
+    --color-300: #586279;
+    --color-400: #38445f;
+    --color-500: #061537;
+    --color-600: #051332;
+    --color-700: #040f27;
+    --color-800: #030c1e;
+    --color-900: #030917;
+
+    // ======GRAY==========
+    --gray-25: #f9fafb;
+    --gray-50: #eeeff2;
+    --gray-100: #cbced5;
+    --gray-200: #b2b7c1;
+    --gray-300: #8f96a5;
+    --gray-400: #798194;
+    --gray-500: #586279;
+    --gray-600: #50596e;
+    --gray-700: #3e4656;
+    --gray-800: #303643;
+    --gray-900: #252933;
+
+
+    --error-500: #ff3126;
+    --success-500: #43c120;
+    --warning-500: #ffc700;
+
+}

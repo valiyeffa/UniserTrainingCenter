@@ -1,0 +1,13 @@
+.header {
+    width: 100%;
+    height: auto;
+    
+    .header-top {
+        background-color: var(--gray-900);
+        padding: 8px 40px;
+
+        .logo {
+            width: 50px;
+        }
+    }
+}
