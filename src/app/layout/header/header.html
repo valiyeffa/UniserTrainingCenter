@@ -4,12 +4,27 @@
             <img class="logo" [src]="logo" alt="Logo">
 
             <div class="contacts">
-                <img [src]="telIcon" alt="Phone">
-                <span>+994 12 000 00 00</span>
+                <div class="contact_item">
+                    <img class="header-top-icons" [src]="telIcon" alt="Phone">
+                    <span>+994 12 000 00 00</span>
+                </div>
+
+                <div class="contact_item">
+                    <img class="header-top-icons" [src]="smsIcon" alt="Mail">
+                    <span>info@edu.az</span>
+                </div>
             </div>
         </div>
         <div class="right-side">
+            <button class="btn">
+                <img [src]="specIcon" alt="Search">
+            </button>
 
+            <div class="lang-btns">
+                <button class="btn active">AZ</button>
+                <button class="btn">RU</button>
+                <button class="btn">EN</button>
+            </div>
         </div>
     </div>
 </div>

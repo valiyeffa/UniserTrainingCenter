@@ -11,6 +11,7 @@ export class Header {
   logo = Logo;
   telIcon = ICONS.headerIcons.telIcon;
   smsIcon = ICONS.headerIcons.smsIcon;
+  specIcon = ICONS.headerIcons.specIcon;
 
   
 }

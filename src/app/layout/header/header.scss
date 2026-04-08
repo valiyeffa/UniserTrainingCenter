@@ -1,13 +1,60 @@
 .header {
     width: 100%;
-    height: auto;
-    
-    .header-top {
-        background-color: var(--gray-900);
-        padding: 8px 40px;
 
-        .logo {
-            width: 50px;
+    .header-top {
+        height: 60px;
+        padding: 0 40px;
+        background-color: var(--gray-900);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left-side {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                width: 50px;
+            }
+
+            .contacts {
+                display: flex;
+                align-items: center;
+                color: var(--color-100);
+                font-size: 14px;
+                gap: 16px;
+                padding-left: 40px;
+
+                .contact_item {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    font-size: 16px;
+
+                    .header-top-icons {
+                        width: 24px;
+                    }
+                }
+            }
+        }
+
+        .right-side {
+            display: flex;
+            gap: 10px;
+
+            .lang-btns {
+                .btn {
+                    color: var(--color-50);
+                    font-weight: 700;
+                    font-size: 11px;
+                    padding: 4px 8px;
+
+                    &.active {
+                        background: var(--primary-500);
+                        border-radius: 4px;
+                    }
+                }
+            }
         }
     }
 }
