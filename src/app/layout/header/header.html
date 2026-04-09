@@ -29,6 +29,23 @@
     </div>
 
     <div class="header-bottom">
-        
+        <div class="nav">
+            @for (item of navbarItems; track $index) {
+            <a class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+                [routerLink]='item.link'>{{item.name}}</a>
+            }
+        </div>
+
+        <div class="user-data">
+            @if(user){
+                <div class="user-circle">
+                    NS
+                </div>
+                <p class="user">Nəzrin Səlimzadə</p>
+            }@else{
+                <button class="btn login-btn">Daxil ol</button>
+                <button class="btn register-btn">Qeydiyyat</button>
+            }
+        </div>
     </div>
 </div>
