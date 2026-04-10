@@ -1,0 +1,14 @@
+<div class="home-scnd-sect">
+    <div class="scnd-section-body">
+
+        @for (item of data; track $index) {
+        <div class="data-box">
+            <div class="box-img">
+                <img [src]="item.img" alt="Icon">
+                <div class="circle"></div>
+            </div>
+            <span>{{item.title}}</span>
+        </div>
+        }
+    </div>
+</div>

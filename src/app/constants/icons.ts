@@ -16,5 +16,14 @@ export const ICONS={
         carouselImage1:'images/carousel1.png',
         carouselImage2:'images/carousel2.png',
         carouselImage3:'images/carousel3.png',
+
+        secondSectionIcons:{
+            libraryIcon:'images/library.svg',
+            carierIcon: 'images/carier.svg',
+            examIcon: 'images/onlineExam.svg',
+            apelyasiyaIcon: 'images/apelyasiya.svg',
+            metodicPersonIcon: 'images/metodicPerson.svg',
+            volunterIcon: 'images/volunter.svg',
+        }
     }
 }

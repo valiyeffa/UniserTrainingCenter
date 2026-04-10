@@ -21,7 +21,7 @@ export class Header {
       name: 'Ana səhifə'
     },
     {
-      link: 'about',
+      link: 'about-us',
       name: 'Haqqımızda'
     },
     {
