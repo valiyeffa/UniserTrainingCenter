@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { ICONS, LogoDark } from '../../constants/icons';
 import { RouterLink } from "@angular/router";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
-  imports: [RouterLink],
+  imports: [RouterLink, CommonModule],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })
 export class Footer {
+  date= new Date();
   logo = LogoDark;
   telIcon = ICONS.headerIcons.telIcon;
   smsIcon = ICONS.headerIcons.smsIcon;

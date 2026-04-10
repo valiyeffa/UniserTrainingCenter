@@ -86,6 +86,7 @@
                 transition: all .2s ease;
                 position: relative;
                 padding-bottom: 5px;
+                white-space: nowrap;
 
                 &.active {
                     color: var(--primary-500);
@@ -180,19 +181,9 @@
     }
 }
 
-@media (max-width:1025px) {
+@media (max-width:1281px) {
     .header {
         .header-bottom {
-            .nav {
-                width: fit-content;
-                overflow: scroll;
-                font-size: 14px;
-                padding-left: 20px;
-
-                .nav-item {
-                    white-space: nowrap;
-                }
-            }
 
             .user-data {
                 width: 25%;
@@ -214,6 +205,25 @@
                     padding: 0 10px;
                 }
             }
+        }
+    }
+}
+
+
+@media (max-width:1025px) {
+    .header {
+        .header-bottom {
+            .nav {
+                width: fit-content;
+                overflow: scroll;
+                font-size: 14px;
+                padding-left: 20px;
+
+                .nav-item {
+                    white-space: nowrap;
+                }
+            }
+
         }
     }
 
