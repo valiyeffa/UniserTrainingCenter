@@ -5,7 +5,7 @@
         <div class="data-box">
             <div class="box-img">
                 <img [src]="item.img" alt="Icon">
-                <div class="circle"></div>
+                <div class="circle {{item.circle? 'primary': 'secondary'}}"></div>
             </div>
             <span>{{item.title}}</span>
         </div>
