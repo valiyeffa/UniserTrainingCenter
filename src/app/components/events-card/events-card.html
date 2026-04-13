@@ -1,0 +1,10 @@
+<div class="events-card">
+    <div class="date">
+        <span class="date-day">{{item.date | date:'dd'}}</span>
+        <p class="date-month">{{item.date | date:'MMMM'}}</p>
+    </div>
+
+    <div class="card-body">
+        <p>{{item.text.slice(0,85)}}..</p>
+    </div>
+</div>

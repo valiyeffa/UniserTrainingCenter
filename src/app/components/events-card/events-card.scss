@@ -1,0 +1,43 @@
+ .events-card {
+     display: flex;
+     align-items: center;
+     padding: 19px 16px;
+     gap: 16px;
+     border: 1px solid #163AAC80;
+     border-radius: 14px;
+     background-color: #0E298A99;
+     color: white;
+
+     .date {
+         width: 64px;
+         height: 64px;
+         background-color: white;
+         border-radius: 10px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         color: var(--secondary-700);
+         font-weight: 600;
+         gap: 4px;
+
+         .date-day {
+             font-size: 20px;
+         }
+
+         .date-month {
+             font-size: 12px;
+             margin: 0;
+             text-transform: uppercase;
+         }
+     }
+
+     .card-body {
+         width: 418px;
+
+         p {
+             margin: 0;
+             font-size: 18px;
+         }
+     }
+ }
