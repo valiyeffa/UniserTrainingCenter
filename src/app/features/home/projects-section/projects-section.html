@@ -1,0 +1,14 @@
+<div class="home-fourth-section">
+    <div class="projects-sect-body">
+        <div class="projects-sect-head">
+            <p>Layihələr</p>
+            <a href="#">Hamısına bax</a>
+        </div>
+
+        <div class="projects">
+            @for (item of projDatas; track $index) {
+            <app-project-card [item]="item" />
+            }
+        </div>
+    </div>
+</div>

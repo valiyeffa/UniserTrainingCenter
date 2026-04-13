@@ -185,8 +185,45 @@
         .third-sect-body {
             width: 100%;
             flex-wrap: wrap;
-
         }
     }
+}
 
+@media (max-width:769px) {
+    .home-third-sect {
+        width: 100%;
+        margin-bottom: 0px;
+
+        .third-sect-body {
+            width: 100%;
+            justify-content: center;
+            margin: 0;
+
+            .third-sect-box {
+                width: 100%;
+                padding: 0 40px;
+
+                .box-body {
+                    width: 100%;
+
+                    .box-body-left {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .box-body-right {
+                        display: none;
+                    }
+                }
+
+                .announcement-box{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
 }
