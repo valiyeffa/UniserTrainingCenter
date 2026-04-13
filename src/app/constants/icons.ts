@@ -24,6 +24,9 @@ export const ICONS={
             apelyasiyaIcon: 'images/apelyasiya.svg',
             metodicPersonIcon: 'images/metodicPerson.svg',
             volunterIcon: 'images/volunter.svg',
-        }
+        },
+
+        quotationIcon:'images/quotation.svg',
+        ellipseIcon:'images/ellipse.svg',
     }
 }
