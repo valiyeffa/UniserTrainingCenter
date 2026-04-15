@@ -1,0 +1,17 @@
+<div class="home-last-section">
+    <div class="partners-sect">
+        <div class="sect-title">
+            <span>Tərəfdaşlar</span>
+        </div>
+
+        <div class="sect-body">
+            <swiper-container slides-per-view="4" loop="true" autoplay-delay="2500" speed="1000">
+                @for (item of carouselImages; track $index) {
+                <swiper-slide>
+                    <img [src]="item.image" alt="">
+                </swiper-slide>
+                }
+            </swiper-container>
+        </div>
+    </div>
+</div>

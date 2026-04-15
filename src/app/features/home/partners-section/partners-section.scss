@@ -1,0 +1,56 @@
+@use "swiper/css";
+@use "swiper/css/navigation";
+@use "swiper/css/pagination";
+
+.home-last-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+
+    .partners-sect {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+        .sect-title {
+            color: var(--color-500);
+            font-weight: 600;
+            font-size: 40px;
+        }
+
+        .sect-body {
+            width: 90%;
+            height: 109px;
+
+            swiper-container {
+                width: 100%;
+                height: 100%;
+
+                swiper-slide {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 80%;
+                        height: 100%;
+                        object-fit: contain;
+                        filter: grayscale(100%);
+                        transition: all 0.2s ease;
+
+                        &:hover {
+                            filter: grayscale(0%);
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

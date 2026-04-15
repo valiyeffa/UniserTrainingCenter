@@ -5,10 +5,11 @@ import { HomeThirdSection } from "./home-third-section/home-third-section";
 import { ProjectsSection } from "./projects-section/projects-section";
 import { EventsSection } from "./events-section/events-section";
 import { ReviewsSection } from "./reviews-section/reviews-section";
+import { PartnersSection } from "./partners-section/partners-section";
 
 @Component({
   selector: 'app-home',
-  imports: [HomeFirstSection, HomeSecondSection, HomeThirdSection, ProjectsSection, EventsSection, ReviewsSection],
+  imports: [HomeFirstSection, HomeSecondSection, HomeThirdSection, ProjectsSection, EventsSection, ReviewsSection, PartnersSection],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
