@@ -21,7 +21,8 @@
      }
 
      .card-body {
-         width: 289px;
+         width: 100%;
+         padding: 0 18px;
          height: 53px;
          display: flex;
          flex-direction: column;
@@ -40,4 +41,20 @@
              color: var(--color-300);
          }
      }
+ }
+
+ @media (max-width:426px) {
+     .project-card {
+         width: 100%;
+
+         .image {
+             width: 100%;
+             height: auto;
+         }
+
+         .card-body {
+             white-space: wrap;
+         }
+     }
+
  }

@@ -41,3 +41,29 @@
          }
      }
  }
+
+ @media (max-width:426px) {
+     .events-card {
+         width: 100%;
+
+         .date {
+             padding: 0 7px;
+
+             .date-day {
+                 font-size: 20px;
+             }
+
+             .date-month {
+                 font-size: 10px;
+             }
+         }
+
+         .card-body {
+             width: 100%;
+
+             p {
+                 font-size: 0.8rem;
+             }
+         }
+     }
+ }

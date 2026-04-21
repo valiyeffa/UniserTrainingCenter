@@ -1,5 +1,4 @@
-<div class="home-first-sect">
-
+<section class="home-first-sect">
     <div class="slider">
         <swiper-container slides-per-view="1" loop="true" autoplay-delay="2500" speed="1000">
             @for (item of carouselImages; track $index) {
@@ -9,8 +8,8 @@
             }
         </swiper-container>
 
-        <div class="slider-items">
-            <div class="item-text">
+        <div class="slider-items d-flex justify-content-center">
+            <div class="item-text d-flex flex-column align-items-center text-center">
 
                 <h2>
                     Təhsildə Zəfər Yolunuz:
@@ -24,26 +23,30 @@
                 <button class="btn more-btn">Ətraflı öyrən</button>
             </div>
         </div>
-        <div class="slider-item-bottom">
-
-            <div class="count-box">
-                <div class="box">
+        <div class="slider-item-bottom d-flex justify-content-center">
+            <div class="count-box d-flex align-items-center justify-content-center text-center">
+                <div class="box d-flex flex-column align-items-center justify-content-center">
                     <p>1250+</p>
                     <span>İştirak edən müəllimlərin sayı</span>
                 </div>
-                <div class="box">
+                <div class="hr"></div>
+                <div class="box d-flex flex-column align-items-center justify-content-center">
                     <p>5</p>
-                    <span>Keçirilmiş olimpiadalar</span>
+                    <span>Keçirilmiş <br> olimpiadalar</span>
                 </div>
-                <div class="box">
+                <div class="hr"></div>
+
+                <div class="box d-flex flex-column align-items-center justify-content-center">
                     <p>60+</p>
                     <span>Əhatə olunan regionlar (rayon/şəhər)</span>
                 </div>
-                <div class="box">
+                <div class="hr"></div>
+
+                <div class="box d-flex flex-column align-items-center justify-content-center">
                     <p>120</p>
-                    <span>Qaliblər və mükafatçılar</span>
+                    <span>Qaliblər <br> və mükafatçılar</span>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>

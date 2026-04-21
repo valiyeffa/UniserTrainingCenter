@@ -1,52 +1,54 @@
 <div class="home-fifth-section">
     <div class="right-sky-blue">
     </div>
-    <div class="fifth-section-body">
-        <div class="events-sect body-sect">
-            <div class="body-sect-title">
-                <p>Tədbirlər</p>
-                <a href="#">Hamısına bax</a>
-            </div>
-
-            <div class="events-body">
-                @for (item of eventsData; track $index) {
-                <app-events-card [item]="item" />
-                }
-            </div>
-        </div>
-        <div class="conferences-sect body-sect">
-            <div class="body-sect-title">
-                <p>Konfranslar</p>
-                <a href="#">Hamısına bax</a>
-            </div>
-
-            <div class="conferences-body">
-                <div class="conferences-card">
-                    <img src="images/eventsImage/events1.png" alt="ConferencesImage">
-
-                    <div class="card-body">
-                        <p>“Mütərəqqi texnologiyalar və innovasiyalar” mövzusunda X Respublika elmi-texniki konfransı
-                        </p>
-                    </div>
+    <div class="container-fluid justify-content-center">
+        <div class="fifth-section-body row g-4 justify-content-center align-items-start">
+            <div class="events-sect body-sect col-12 col-lg-6">
+                <div class="body-sect-title d-flex justify-content-between align-items-center">
+                    <p>Tədbirlər</p>
+                    <a href="#">Hamısına bax</a>
                 </div>
 
-                <div class="conferences-body-bottom">
+                <div class="events-body d-flex flex-column">
+                    @for (item of eventsData; track $index) {
+                    <app-events-card [item]="item" />
+                    }
+                </div>
+            </div>
+            <div class="conferences-sect body-sect col-12 col-lg-6">
+                <div class="body-sect-title d-flex justify-content-between align-items-center">
+                    <p>Konfranslar</p>
+                    <a href="#">Hamısına bax</a>
+                </div>
+
+                <div class="conferences-body d-flex flex-column">
                     <div class="conferences-card">
-                        <img src="images/eventsImage/events2.png" alt="ConferencesImage">
+                        <img src="images/eventsImage/events1.png" alt="ConferencesImage">
 
                         <div class="card-body">
-                            <p>“Mütərəqqi texnologiyalar və innovasiyalar” mövzusunda X...</p>
+                            <p>“Mütərəqqi texnologiyalar və innovasiyalar” mövzusunda X Respublika elmi-texniki
+                                konfransı
+                            </p>
                         </div>
                     </div>
-                    <div class="conferences-card">
-                        <img src="images/eventsImage/events3.png" alt="ConferencesImage">
 
-                        <div class="card-body">
-                            <p>“Mütərəqqi texnologiyalar və innovasiyalar” mövzusunda X...</p>
+                    <div class="conferences-body-bottom d-flex">
+                        <div class="conferences-card">
+                            <img src="images/eventsImage/events2.png" alt="ConferencesImage">
+
+                            <div class="card-body">
+                                <p>“Mütərəqqi texnologiyalar və innovasiyalar” mövzusunda X...</p>
+                            </div>
+                        </div>
+                        <div class="conferences-card">
+                            <img src="images/eventsImage/events3.png" alt="ConferencesImage">
+
+                            <div class="card-body">
+                                <p>“Mütərəqqi texnologiyalar və innovasiyalar” mövzusunda X...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>

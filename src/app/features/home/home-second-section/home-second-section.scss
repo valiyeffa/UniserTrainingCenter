@@ -1,70 +1,48 @@
 .home-scnd-sect {
-    margin: 100px 0px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 100px 0;
 
-    .scnd-section-body {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        text-align: center;
+    .data-box {
+        width: 210px;
+        height: 171px;
+        border: 1px solid var(--gray-100);
+        border-radius: 20px;
 
-        .data-box {
-            width: 210px;
-            height: 171px;
-            border: 1px solid var(--gray-100);
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
+        .box-img { 
+            img {
+                width: 59px;
+                height: 59px;
+            }
 
-            .box-img {
+            .circle {
                 position: relative;
+                position: absolute;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                right: -18px;
+                bottom: -10px;
+                z-index: -1;
 
-                img {
-                    width: 59px;
-                    height: 59px;
+                &.primary {
+                    background-color: var(--primary-100);
                 }
 
-                .circle {
-                    position: absolute;
-                    width: 45px;
-                    height: 45px;
-                    border-radius: 50%;
-                    right: -18px;
-                    bottom: -10px;
-                    z-index: -1;
-
-                    &.primary {
-                        background-color: var(--primary-100);
-                    }
-
-                    &.secondary {
-                        background-color: var(--secondary-50);
-                    }
+                &.secondary {
+                    background-color: var(--secondary-50);
                 }
             }
+        }
 
-            span {
-                font-weight: 500;
-                font-size: 18px;
-                color: var(--color-400);
-            }
+        span {
+            font-weight: 500;
+            font-size: 18px;
+            color: var(--color-400);
         }
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     .home-scnd-sect {
-        margin: 70px 0px;
-        .scnd-section-body {
-            gap: 15px;
-            flex-wrap: wrap;
-        }
+        margin: 70px 0;
     }
 }

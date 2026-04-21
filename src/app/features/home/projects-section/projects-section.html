@@ -1,14 +1,16 @@
-<div class="home-fourth-section">
-    <div class="projects-sect-body">
-        <div class="projects-sect-head">
-            <p>Layihələr</p>
-            <a href="#">Hamısına bax</a>
-        </div>
+<section class="home-fourth-section">
+    <div class="container-fluid">
+        <div class="projects-sect-body d-flex flex-column align-items-center">
+            <div class="projects-sect-head d-flex justify-content-between align-items-center">
+                <p>Layihələr</p>
+                <a href="#">Hamısına bax</a>
+            </div>
 
-        <div class="projects">
-            @for (item of projDatas; track $index) {
-            <app-project-card [item]="item" />
-            }
+            <div class="projects row g-4">
+                @for (item of projDatas; track $index) {
+                <app-project-card class="col-12 col-sm-6 col-lg-4 col-xl-4 col-xxl-3" [item]="item" />
+                }
+            </div>
         </div>
     </div>
-</div>
+</section>

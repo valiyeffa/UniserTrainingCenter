@@ -14,6 +14,7 @@ export class Header {
   telIcon = ICONS.headerIcons.telIcon;
   smsIcon = ICONS.headerIcons.smsIcon;
   specIcon = ICONS.headerIcons.specIcon;
+  bars = ICONS.headerIcons.bars;
 
   navbarItems = [
     {

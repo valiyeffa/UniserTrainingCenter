@@ -2,174 +2,175 @@
     height: fit-content;
     margin-bottom: 50px;
 
-    .third-sect-body {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 40px;
+    .container-fluid {
+        padding: 0 25px;
 
-        .third-sect-box {
-            .box-head {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+        .third-sect-body {
+            .third-sect-box {
+                .box-head {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
-                p {
-                    font-size: 30px;
-                    font-weight: 600;
-                    color: var(--color-500);
-                }
+                    p {
+                        font-size: 30px;
+                        font-weight: 600;
+                        color: var(--color-500);
+                    }
 
-                a {
-                    font-size: 16px;
-                    font-weight: 500;
-                    color: var(--primary-500);
-                    transition: all 0.2s ease;
+                    a {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: var(--primary-500);
+                        transition: all 0.2s ease;
 
-                    &:hover {
-                        color: var(--primary-600);
+                        &:hover {
+                            color: var(--primary-600);
+                        }
                     }
                 }
-            }
 
-            .box-body {
-                height: 548px;
-                display: flex;
-                gap: 24px;
-
-                .box-body-left {
+                .box-body {
                     width: 100%;
-                    height: 100%;
+                    height: 548px;
+                    gap: 24px;
 
-                    .news-box {
-                        width: 520px;
+                    .box-body-left {
+                        width: 100%;
+                        height: 100%;
+
+                        .news-box {
+                            width: 520px;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+
+                            .image {
+                                width: 520px;
+                                height: 336px;
+                                object-fit: cover;
+                                border-radius: 16px;
+                                overflow: hidden;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .news-box-body {
+                                display: flex;
+                                flex-direction: column;
+
+                                .news-mini-title {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                    font-size: 14px;
+                                    font-weight: 500;
+
+                                    .box-date {
+                                        color: var(--secondary-500);
+                                    }
+
+                                    .category {
+                                        color: var(--color-400);
+                                    }
+                                }
+
+                                .news-title {
+                                    font-weight: 600;
+                                    color: var(--color-600);
+                                    font-size: 20px;
+                                    line-height: 147%;
+                                }
+
+                                .news-body-text {
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 147%;
+                                    color: var(--color-300);
+                                }
+                            }
+                        }
+                    }
+
+                    .box-body-right {
+                        width: 100%;
                         height: 100%;
                         display: flex;
                         flex-direction: column;
                         gap: 24px;
 
-                        .image {
-                            width: 520px;
-                            height: 336px;
-                            object-fit: cover;
-                            border-radius: 16px;
-                            overflow: hidden;
-
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-
-                        .news-box-body {
+                        .news-mini-box {
+                            width: 100%;
+                            // height: 96px;
                             display: flex;
-                            flex-direction: column;
+                            gap: 24px;
 
-                            .news-mini-title {
+                            .image {
+                                width: 96px;
+                                height: 96px;
+                                object-fit: cover;
+                                border-radius: 10px;
+                                overflow: hidden;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .news-mini-box-body {
+                                width: 196px;
+                                height: 89px;
                                 display: flex;
-                                align-items: center;
-                                gap: 5px;
-                                font-size: 14px;
-                                font-weight: 500;
+                                flex-direction: column;
+                                justify-content: space-between;
 
-                                .box-date {
+                                .news-mini-date {
+                                    font-size: 14px;
+                                    font-weight: 500;
                                     color: var(--secondary-500);
                                 }
 
-                                .category {
-                                    color: var(--color-400);
+                                .news-mini-box-title {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: black;
+                                    line-height: 147%;
                                 }
                             }
-
-                            .news-title {
-                                font-weight: 600;
-                                color: var(--color-600);
-                                font-size: 20px;
-                                line-height: 147%;
-                            }
-
-                            .news-body-text {
-                                font-weight: 500;
-                                font-size: 16px;
-                                line-height: 147%;
-                                color: var(--color-300);
-                            }
                         }
                     }
-                }
 
-                .box-body-right {
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 24px;
+                    &.announcement-box {
+                        flex-direction: column;
+                        gap: 16px;
+                        width: 100%;
 
-                    .news-mini-box {
-                        width: 316px;
-                        height: 96px;
+                    }
+
+                    .announcement-card {
+                        width: 100%;
+                        height: fit-content;
                         display: flex;
-                        gap: 24px;
+                        align-items: center;
+                        border: 1px solid var(--gray-50);
+                        border-radius: 12px;
+                        gap: 20px;
+                        padding: 20px 16px;
+                        font-weight: 500;
+                        font-size: 16px;
 
-                        .image {
-                            width: 96px;
-                            height: 96px;
-                            object-fit: cover;
-                            border-radius: 10px;
-                            overflow: hidden;
-
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
+                        .date {
+                            color: var(--secondary-500);
                         }
 
-                        .news-mini-box-body {
-                            width: 196px;
-                            height: 89px;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-
-                            .news-mini-date {
-                                font-size: 14px;
-                                font-weight: 500;
-                                color: var(--secondary-500);
-                            }
-
-                            .news-mini-box-title {
-                                font-size: 16px;
-                                font-weight: 600;
-                                color: black;
-                                line-height: 147%;
-                            }
+                        .text {
+                            color: #000000;
                         }
-                    }
-                }
-
-                &.announcement-box {
-                    flex-direction: column;
-                    gap: 16px;
-
-                }
-
-                .announcement-card {
-                    width: 411px;
-                    height: fit-content;
-                    display: flex;
-                    align-items: center;
-                    border: 1px solid var(--gray-50);
-                    border-radius: 12px;
-                    gap: 20px;
-                    padding: 20px 16px;
-                    font-weight: 500;
-                    font-size: 16px;
-
-                    .date {
-                        color: var(--secondary-500);
-                    }
-
-                    .text {
-                        color: #000000;
                     }
                 }
             }
@@ -185,7 +186,6 @@
         .third-sect-body {
             width: 100%;
             flex-wrap: wrap;
-            margin: 0;
             align-items: center;
             justify-content: center;
         }
@@ -200,7 +200,6 @@
         .third-sect-body {
             width: 100%;
             justify-content: center;
-            margin: 0;
 
             .third-sect-box {
                 width: 100%;
@@ -217,7 +216,7 @@
                     }
 
                     .box-body-right {
-                        display: none;
+                        display: none !important;
                     }
                 }
 
@@ -225,6 +224,64 @@
                     width: 100%;
                     display: flex;
                     align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:431px) {
+    .home-third-sect {
+        margin-bottom: 20px;
+
+        .container-fluid {
+            padding: 0;
+
+            .third-sect-body {
+                gap: 25px;
+
+                .third-sect-box {
+
+                    .box-body {
+                        width: 100%;
+                        height: fit-content;
+
+                        .box-body-left {
+
+                            .news-box {
+
+                                .image {
+                                    width: 100%;
+                                    height: auto;
+                                }
+
+                                .news-box-body {
+                                    gap: 15px;
+
+                                    .news-title {
+                                        font-size: 1rem;
+                                        margin: 0;
+                                    }
+
+                                    .news-body-text {
+                                        font-size: 0.8rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .announcement-card {
+                            font-size: 0.8rem;
+
+                            .date {
+                                color: var(--secondary-500);
+                            }
+
+                            .text {
+                                color: #000000;
+                            }
+                        }
+                    }
                 }
             }
         }
