@@ -1,6 +1,7 @@
 <div class="project-card">
-    <div class="image">
-        <img [src]="item.image" alt="Image">
+    <div class="image" [class.loading]="!imageLoaded">
+        <img [src]="item.image" alt="Image" loading="lazy" decoding="async" [class.is-visible]="imageLoaded"
+            (load)="onImageLoad()" (error)="onImageError()">
     </div>
 
     <div class="card-body">
