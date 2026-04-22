@@ -278,6 +278,36 @@
     }
 }
 
+@media (max-width:730px) {
+    .home-first-sect {
+
+        .slider {
+            .slider-items {
+                .item-text {
+                    width: 80%;
+                    gap: 7px;
+
+                    h2 {
+                        font-size: 25px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+
+                    .more-btn {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .slider-item-bottom {
+                display: none !important;
+            }
+        }
+    }
+}
+
 @media (max-width:431px) {
     .home-first-sect {
 
