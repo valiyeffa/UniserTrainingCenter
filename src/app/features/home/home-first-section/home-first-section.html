@@ -3,7 +3,7 @@
         <swiper-container slides-per-view="1" loop="true" autoplay-delay="2500" speed="1000">
             @for (item of carouselImages; track $index) {
             <swiper-slide>
-                <img [src]="item.image" alt="" loading="lazy" decoding="async">
+                <img [src]="item.image" alt="">
             </swiper-slide>
             }
         </swiper-container>

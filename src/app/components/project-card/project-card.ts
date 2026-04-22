@@ -8,15 +8,4 @@ import { Component, Input } from '@angular/core';
 })
 export class ProjectCard {
   @Input() item!: any;
-
-  imageLoaded = false;
-
-  onImageLoad(): void {
-    this.imageLoaded = true;
-  }
-
-  onImageError(): void {
-    this.imageLoaded = true;
-  }
-
 }
