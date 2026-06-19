@@ -1,10 +1,31 @@
 <div class="events-card">
-    <div class="date">
-        <span class="date-day">{{item.date | date:'dd'}}</span>
-        <p class="date-month">{{item.date | date:'MMMM'}}</p>
-    </div>
+    <div class="card">
+        <img src="images/eventsImage/events4.png" class="card-img-top" alt="...">
+        <div class="img-top">
+            <div class="time-counter">02g : 05s : 12dəq</div>
+            <div class="event-type">Ənənəvi</div>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Pedaqoji Seminar — Rəqəmsal Təhsil</h5>
+            <div class="card-text">
+                <div class="d-flex align-items-center gap-2">
+                    <img [src]="calendar" alt=".">
+                    <span>15 mart 2026</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <img [src]="clock" alt=".">
+                    <span>10:00 - 16:00</span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <img [src]="location" alt=".">
+                    <span>Baku Conference Center</span>
+                </div>
+            </div>
 
-    <div class="card-body">
-        <p>{{item.text.slice(0,85)}}..</p>
+            <div class="card-bottom d-flex justify-content-between align-items-center">
+                <span class="price">15 AZN</span>
+                <button class="btn add-cart-btn">Səbətə at</button>
+            </div>
+        </div>
     </div>
 </div>

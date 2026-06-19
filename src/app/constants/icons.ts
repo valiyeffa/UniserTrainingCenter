@@ -1,3 +1,5 @@
+import { EventsSection } from "../features/home/events-section/events-section";
+
 export const Logo = 'images/logo.svg';
 export const LogoDark = 'images/logoDark.svg';
 
@@ -26,8 +28,15 @@ export const ICONS = {
             metodicPersonIcon: 'images/metodicPerson.svg',
             volunterIcon: 'images/volunter.svg',
         },
+
+        eventsCard: {
+            calendarIcon: 'images/eventsImage/calendar.svg',
+            clockIcon: 'images/eventsImage/clock.svg',
+            locationIcon: 'images/eventsImage/location.svg',
+        },
+
         aboutSect: 'images/aboutSect.svg',
-        
+
         quotationIcon: 'images/quotation.svg',
         ellipseIcon: 'images/ellipse.svg',
     }
