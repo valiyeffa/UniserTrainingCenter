@@ -26,7 +26,8 @@ export const ICONS = {
             metodicPersonIcon: 'images/metodicPerson.svg',
             volunterIcon: 'images/volunter.svg',
         },
-
+        aboutSect: 'images/aboutSect.svg',
+        
         quotationIcon: 'images/quotation.svg',
         ellipseIcon: 'images/ellipse.svg',
     }
